@@ -3,7 +3,7 @@ Color Palette:
 background color: #06283D  
 font color: #DFF6FF
 secondary color: #256D85  
-tertiary color:    
+tertiary color: #256D85   
 I may change the colors if I don't like the outcome of the website
 I'll target colors that complement each other instead of bright colors with dark colors.*/
 
@@ -11,8 +11,9 @@ I'll target colors that complement each other instead of bright colors with dark
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Spice:wght@300;400&display=swap');
 /* my text style called "Bungee Spice */
 
+
 header {
-    margin: 0 5rem;
+    margin: 0 4rem;
     letter-spacing: 0.8rem;
     text-align: center;
     border-bottom: 1px solid #826F66;
@@ -22,18 +23,64 @@ header {
     box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.4);
     text-transform: uppercase;
     font-size: 1.1rem;
-}/*gives the title and header(s) a new look*/
-
+}
 body {
-    background-color: #06283D;
-    color: #DFF6FF;
+    background-color: #3A3845;
+    color: #F7CCAC;
     font-family: 'Bungee Spice', sans-serif; 
     margin: 0;
-}/*I added the font style I want*/
-
+}
 cite {
     font-size: 2rem;
 }
+.imageCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 7rem 4rem;
+}
+.imageCard img {
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
+.imageCard a {
+    text-decoration: none;
+    color: #826F66;
+    
+}
+.cardText {
+    color: #C69B7B;
+    text-align: center;
+    padding: 1rem;
+    padding: 2rem;
+    border-radius: 30px;
+    margin-top: 2rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
+@media (min-width: 768px) {
+    header {
+        font-size: 1.6rem;
+    }
+
+    .gallery {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    .imageCard {
+        max-width: 28%;
+    }
+}
+
+
 
 /*I'll add more style once I get the images imported*/
-
